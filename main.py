@@ -25,7 +25,7 @@ while True:
             cv2.circle(frame, (x,y), 3, (0,255,0))
             if i == 0:
                 screen_x  = screen_w / frame_w * x
-                screen_y  = screen_w / frame_h * y
+                screen_y  = screen_h / frame_h * y
 
                 pyautogui.moveTo(screen_x, screen_y, duration=0.1)
 
